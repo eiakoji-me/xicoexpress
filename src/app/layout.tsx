@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import type { Metadata } from "next";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "XicoExpress",
@@ -15,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body>
+        <Header />
         {children}
         <Footer />
       </body>

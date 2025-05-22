@@ -3,12 +3,18 @@ import Image from "next/image";
 import Link from "next/link";
 import { MapPin, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { FaFacebookF, FaInstagram, FaWhatsapp, FaTiktok } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaWhatsapp,
+  FaGoogle,
+  FaTiktok,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="bg-gray-100 text-gray-800 text-sm">
-      <div className="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-5 gap-8">
         <div>
           <Image
             src="/logo_footer.svg"
@@ -26,7 +32,9 @@ const Footer = () => {
           </p>
           <p className="flex items-center gap-2 text-sm leading-relaxed">
             <Phone className="h-4 w-4 text-muted-foreground" />
-            <span>+52 764 102 8914</span>
+            <a href="tel:+527641028914" className="hover:underline">
+              +52 764 102 8914
+            </a>
           </p>
         </div>
 
@@ -39,8 +47,13 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link href="/como-funciona" className="hover:text-primary">
-                ¿Cómo funciona?
+              <Link href="/novedades" className="hover:text-primary">
+                Novedades
+              </Link>
+            </li>
+            <li>
+              <Link href="/contacto" className="hover:text-primary">
+                Contacto
               </Link>
             </li>
           </ul>
@@ -71,6 +84,32 @@ const Footer = () => {
         </div>
 
         <div>
+          <h4 className="text-base font-semibold mb-2">Enlaces</h4>
+          <ul className="space-y-1">
+            <li>
+              <Link href="/trabajo" className="hover:text-primary">
+                Bolsa de trabajo
+              </Link>
+            </li>
+            <li>
+              <Link href="/faq" className="hover:text-primary">
+                Preguntas Frecuentes
+              </Link>
+            </li>
+            <li>
+              <Link href="/politica-privacidad" className="hover:text-primary">
+                Política de Privacidad
+              </Link>
+            </li>
+            <li>
+              <Link href="/terminos-condiciones" className="hover:text-primary">
+                Términos y Condiciones
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        <div>
           <h4 className="text-base font-semibold mb-2">Newsletter</h4>
           <form className="flex flex-col gap-2">
             <input
@@ -85,24 +124,35 @@ const Footer = () => {
           <div className="text-center mt-4">
             <div className="flex justify-center gap-4">
               <a href="#" aria-label="Facebook">
-                <FaFacebookF className="h-7 w-7 text-muted-foreground hover:text-primary transition" />
+                <FaFacebookF className="h-6 w-6 text-muted-foreground hover:text-primary transition" />
               </a>
               <a href="#" aria-label="Instagram">
-                <FaInstagram className="h-7 w-7 text-muted-foreground hover:text-primary transition" />
+                <FaInstagram className="h-6 w-6 text-muted-foreground hover:text-primary transition" />
               </a>
-              <a href="https://wa.me/527641028914" aria-label="WhatsApp">
-                <FaWhatsapp className="h-7 w-7 text-muted-foreground hover:text-primary transition" />
+              <a
+                href="https://wa.me/527641028914"
+                aria-label="WhatsApp"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaWhatsapp className="h-6 w-6 text-muted-foreground hover:text-primary transition" />
+              </a>
+              <a href="#" aria-label="Google">
+                <FaGoogle className="h-6 w-6 text-muted-foreground hover:text-primary transition" />
               </a>
               <a href="#" aria-label="TikTok">
-                <FaTiktok className="h-7 w-7 text-muted-foreground hover:text-primary transition" />
+                <FaTiktok className="h-6 w-6 text-muted-foreground hover:text-primary transition" />
               </a>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="border-t border-gray-300 py-4 text-center text-xs text-gray-600">
-        © {new Date().getFullYear()} XicoExpress. Todos los derechos reservados.
+      <div className="border-t border-gray-300 py-4 px-4 text-xs text-gray-600 text-center flex flex-col items-center gap-2">
+        <span>
+          &copy; {new Date().getFullYear()} XicoExpress. Todos los derechos
+          reservados.
+        </span>
       </div>
     </footer>
   );
