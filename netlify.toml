@@ -1,0 +1,6 @@
+[build]
+command = "next build"
+# Do NOT set a publish directory; the plugin handles this for App Router projects
+
+[[plugins]]
+package = "@netlify/plugin-nextjs"
