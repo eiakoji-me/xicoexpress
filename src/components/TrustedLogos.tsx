@@ -4,12 +4,13 @@ import React from "react";
 import Image from "next/image";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
+import type { KeenSliderInstance } from "keen-slider";
 
 // Autoplay plugin
-function AutoplayPlugin(slider: any) {
-  let timeout: any;
-  let clearNextTimeout = () => clearTimeout(timeout);
-  let nextTimeout = () => {
+function AutoplayPlugin(slider: KeenSliderInstance) {
+  let timeout: ReturnType<typeof setTimeout>;
+  const clearNextTimeout = () => clearTimeout(timeout);
+  const nextTimeout = () => {
     clearTimeout(timeout);
     timeout = setTimeout(() => {
       slider.next();
