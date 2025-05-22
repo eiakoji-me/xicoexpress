@@ -35,7 +35,7 @@ export default function Testimonials() {
       if (!api) return;
       indexRef.current = (indexRef.current + 1) % testimonials.length;
       api.scrollTo(indexRef.current);
-    }, 5000);
+    }, 10000);
     return () => clearInterval(interval);
   }, [api]);
 
