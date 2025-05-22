@@ -5,6 +5,28 @@ import Image from "next/image";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
+// Autoplay plugin
+function AutoplayPlugin(slider: any) {
+  let timeout: any;
+  let clearNextTimeout = () => clearTimeout(timeout);
+  let nextTimeout = () => {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+      slider.next();
+    }, 2000);
+  };
+
+  slider.on("created", () => {
+    nextTimeout();
+    slider.container.addEventListener("mouseover", clearNextTimeout);
+    slider.container.addEventListener("mouseout", nextTimeout);
+  });
+
+  slider.on("dragStarted", clearNextTimeout);
+  slider.on("animationEnded", nextTimeout);
+  slider.on("updated", nextTimeout);
+}
+
 const brands = [
   { name: "DHL", src: "/logos/dhl.svg" },
   { name: "UPS", src: "/logos/ups.svg" },
@@ -14,18 +36,21 @@ const brands = [
 ];
 
 export default function TrustedBrands() {
-  const [sliderRef] = useKeenSlider<HTMLDivElement>({
-    loop: true,
-    breakpoints: {
-      "(min-width: 640px)": {
-        slides: { perView: 3, spacing: 16 },
+  const [sliderRef] = useKeenSlider<HTMLDivElement>(
+    {
+      loop: true,
+      breakpoints: {
+        "(min-width: 640px)": {
+          slides: { perView: 3, spacing: 16 },
+        },
+        "(min-width: 1024px)": {
+          slides: { perView: 5, spacing: 24 },
+        },
       },
-      "(min-width: 1024px)": {
-        slides: { perView: 5, spacing: 24 },
-      },
+      slides: { perView: 1, spacing: 8 },
     },
-    slides: { perView: 1, spacing: 8 },
-  });
+    [AutoplayPlugin]
+  );
 
   return (
     <section className="bg-white py-10">
