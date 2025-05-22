@@ -36,21 +36,23 @@ export default function TrustedBrands() {
           nacionales e internacionales
         </h2>
       </div>
-      <div ref={sliderRef} className="keen-slider px-4">
-        {brands.map((brand, i) => (
-          <div
-            key={i}
-            className="keen-slider__slide flex justify-center items-center h-16"
-          >
-            <Image
-              src={brand.src}
-              alt={brand.name}
-              width={120}
-              height={64}
-              className="object-contain h-full"
-            />
-          </div>
-        ))}
+      <div className="max-w-5xl mx-auto px-4">
+        <div ref={sliderRef} className="keen-slider">
+          {brands.map((brand, i) => (
+            <div
+              key={i}
+              className="keen-slider__slide flex justify-center items-center h-16"
+            >
+              <Image
+                src={brand.src}
+                alt={brand.name}
+                width={120}
+                height={64}
+                className="object-contain h-full"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
