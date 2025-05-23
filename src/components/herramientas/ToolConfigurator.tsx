@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -9,10 +10,21 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
+type ToolPayload =
+  | { carrier: string; trackingNumber: string }
+  | {
+      origin: string;
+      destination: string;
+      length: string;
+      width: string;
+      height: string;
+      weight: string;
+    };
+
 export default function ToolConfigurator({
   onSubmit,
 }: {
-  onSubmit?: (tool: "cotizar" | "rastrear", data: any) => void;
+  onSubmit?: (tool: "cotizar" | "rastrear", data: ToolPayload) => void;
 }) {
   const [activeTool, setActiveTool] = useState<"rastrear" | "cotizar">(
     "rastrear"
