@@ -1,8 +1,8 @@
-import Hero from "@/components/Hero";
-import PartnerPlatforms from "@/components/PartnerPlatforms";
-import QuoteTracker from "@/components/QouteTracker";
-import Testimonials from "@/components/Testimonials";
-import TrustedLogos from "@/components/TrustedLogos";
+import Hero from "@/components/home/Hero";
+import PartnerPlatforms from "@/components/home/PartnerPlatforms";
+import QuoteTracker from "@/components/herramientas/QouteTracker";
+import Testimonials from "@/components/home/Testimonials";
+import TrustedLogos from "@/components/home/TrustedLogos";
 
 export default function Home() {
   return (

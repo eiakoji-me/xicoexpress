@@ -5,12 +5,7 @@ import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-
-const navLinks = [
-  { href: "/nosotros", label: "Nosotros" },
-  { href: "/servicios", label: "Servicios" },
-  { href: "/contacto", label: "Contáctanos" },
-];
+import { navLinks, ctaButton } from "@/config/site.config";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -75,12 +70,12 @@ export default function Header() {
               </Link>
             ))}
             <a
-              href="https://wa.me/527641028914?text=Hola%20XicoExpress%2C%20quiero%20más%20información%20sobre%20sus%20servicios."
-              target="_blank"
+              href={ctaButton.href}
+              target={ctaButton.target}
               rel="noopener noreferrer"
             >
               <Button className="bg-yellow-400 text-black mt-2 shadow-md w-full">
-                Habla con un asesor
+                {ctaButton.label}
               </Button>
             </a>
           </div>
