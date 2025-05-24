@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netlify Forms</title>
+</head>
+
+<body>
+  <form name="contact" netlify hidden>
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <input type="text" name="subject" />
+    <select name="motivo">
+      <option value="envios">Envios</option>
+      <option value="fletes">Fletes</option>
+      <option value="comercio">Comercio</option>
+      <option value="negocios">Negocios</option>
+      <option value="otros">Otros</option>
+    </select>
+    <textarea name="mensaje"></textarea>
+  </form>
+</body>
+
+</html>
