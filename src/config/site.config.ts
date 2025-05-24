@@ -11,7 +11,7 @@ export const navLinks: NavLink[] = [
   { href: "/nosotros", label: "Nosotros" },
   { href: "/servicios", label: "Servicios" },
   { href: "/herramientas", label: "Herramientas" },
-  { href: "/contacto", label: "Contáctanos" },
+  { href: "/contactanos", label: "Contáctanos" },
 ];
 
 export const ctaButton: CtaButton = {
@@ -27,7 +27,7 @@ export const footerLinks: FooterSection[] = [
     links: [
       { label: "Quiénes somos", href: "/nosotros" },
       { label: "Novedades", href: "/novedades" },
-      { label: "Contacto", href: "/contacto" },
+      { label: "Contactanos", href: "/contactanos" },
     ],
   },
   {
@@ -53,8 +53,18 @@ export const footerLinks: FooterSection[] = [
 ];
 
 export const socialLinks: SocialLink[] = [
-  { label: "Facebook", href: "#", show: true, iconKey: "facebook" },
-  { label: "Instagram", href: "#", show: true, iconKey: "instagram" },
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/Xicoexpress/#",
+    show: true,
+    iconKey: "facebook",
+  },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/xicoexpress/",
+    show: true,
+    iconKey: "instagram",
+  },
   {
     label: "WhatsApp",
     href: "https://wa.me/527641028914",
@@ -62,9 +72,19 @@ export const socialLinks: SocialLink[] = [
     show: true,
     iconKey: "whatsapp",
   },
-  { label: "Google", href: "#", show: false, iconKey: "google" },
+  {
+    label: "Google",
+    href: "https://g.co/kgs/19pehR5",
+    show: false,
+    iconKey: "google",
+  },
   { label: "Youtube", href: "#", show: true, iconKey: "youtube" },
-  { label: "TikTok", href: "#", show: true, iconKey: "tiktok" },
+  {
+    label: "TikTok",
+    href: "https://www.tiktok.com/@xicoexpress",
+    show: true,
+    iconKey: "tiktok",
+  },
 ];
 
 

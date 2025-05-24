@@ -15,7 +15,7 @@ const Footer = () => {
         {/* Logo and Contact Info */}
         <div>
           <Image
-            src="/logo_footer.svg"
+            src="/logo_header.svg"
             alt="XicoExpress Logo"
             width={150}
             height={150}
