@@ -27,15 +27,17 @@ export const footerLinks: FooterSection[] = [
     links: [
       { label: "Quiénes somos", href: "/nosotros" },
       { label: "Novedades", href: "/novedades" },
-      { label: "Contactanos", href: "/contactanos" },
+      { label: "Contáctanos", href: "/contactanos" },
     ],
   },
   {
     title: "Servicios",
     links: [
-      { label: "Paquetería", href: "/servicios#paqueteria" },
-      { label: "Etiquetas", href: "/servicios#etiquetas" },
-      { label: "Devoluciones", href: "/servicios#devoluciones" },
+      { label: "Envíos y Fletes exprés", href: "/servicios/envios" },
+      { label: "Compras y Devoluciones", href: "/servicios/compras" },
+      { label: "Servicios para Empresas", href: "/servicios/empresas" },
+      { label: "Almacenaje y Empaque", href: "/servicios/almacenaje" },
+      { label: "Servicios para Gobierno", href: "/servicios/gobierno" },
     ],
   },
   {
@@ -86,7 +88,6 @@ export const socialLinks: SocialLink[] = [
     iconKey: "tiktok",
   },
 ];
-
 
 export const contactInfo: ContactInfo = {
   address: "Del Gavilán 112-Local B\nXicotepec, Puebla",
