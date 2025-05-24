@@ -74,30 +74,6 @@ export default function ContactoPage() {
       <div className="max-w-7xl mx-auto px-4 py-12 space-y-12">
         {/* Main 2-Column Grid */}
         <div className="grid md:grid-cols-2 gap-8">
-          {/* Left Column: Address + Map */}
-          <div className="space-y-6">
-            <div className="space-y-4">
-              <h2 className="text-2xl font-semibold">Nuestra ubicación</h2>
-              <div className="space-y-2 text-gray-700">
-                <div className="flex items-center gap-2">
-                  <MapPin className="w-5 h-5" />
-                  <span>
-                    Del Gavilán 112 Local B, Xicotepec, Puebla, México
-                  </span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Phone className="w-5 h-5" />
-                  <span>+52 764 102 8914</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Mail className="w-5 h-5" />
-                  <span>contacto@xicoexpress.com</span>
-                </div>
-              </div>
-            </div>
-            <LazyMap />
-          </div>
-
           {/* Right Column: Form */}
           <div className="bg-white p-6 rounded-xl shadow-lg ring-1 ring-gray-200 h-full flex flex-col justify-between">
             {submitted ? (
@@ -199,6 +175,30 @@ export default function ContactoPage() {
                 </div>
               </form>
             )}
+          </div>
+
+          {/* Left Column: Address + Map */}
+          <div className="space-y-6">
+            <div className="space-y-4">
+              <h2 className="text-2xl font-semibold">Nuestra ubicación</h2>
+              <div className="space-y-2 text-gray-700">
+                <div className="flex items-center gap-2">
+                  <MapPin className="w-5 h-5" />
+                  <span>
+                    Del Gavilán 112 Local B, Xicotepec, Puebla, México
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Phone className="w-5 h-5" />
+                  <span>+52 764 102 8914</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Mail className="w-5 h-5" />
+                  <span>contacto@xicoexpress.com</span>
+                </div>
+              </div>
+            </div>
+            <LazyMap />
           </div>
         </div>
       </div>
