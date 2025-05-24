@@ -5,7 +5,7 @@ import {
   ShoppingBag,
   Building2,
   Handshake,
-  Store,
+  Coins,
 } from "lucide-react";
 
 export default function ServiciosPage() {
@@ -110,14 +110,14 @@ export default function ServiciosPage() {
             link="/servicios/empresas/transportistas"
           />
           <IndustryCard
-            icon={<Store className="w-8 h-8 text-yellow-400" />}
-            title="E-commerce y Retail"
+            icon={<Coins className="w-8 h-8 text-yellow-400" />}
+            title="Alianzas Estratégicas"
             points={[
-              "Recepción y gestión de devoluciones",
-              "Empaque especializado",
-              "Atención al cliente por WhatsApp",
+              "Digitalizamos negocios sin presencia en línea",
+              "Colaboración con emprendedores e inversionistas",
+              "Puntos de recolección con aliados locales",
             ]}
-            link="/servicios/empresas/ecommerce"
+            link="/servicios/empresas/expansion"
           />
         </div>
       </section>
