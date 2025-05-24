@@ -12,6 +12,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import Link from "next/link";
 
 function LazyMap() {
   const ref = useRef<HTMLDivElement>(null);
@@ -129,7 +130,7 @@ export default function ContactoPage() {
                   asChild
                   className="bg-yellow-400 text-black hover:bg-yellow-500"
                 >
-                  <a href="/">Ir al inicio</a>
+                  <Link href="/">Ir al inicio</Link>
                 </Button>
               </div>
             ) : (
@@ -138,7 +139,7 @@ export default function ContactoPage() {
                 method="POST"
                 data-netlify="true"
                 netlify-honeypot="bot-field"
-                onSubmit={(e) => {
+                onSubmit={() => {
                   setSubmitted(true);
                 }}
                 className="flex flex-col gap-4 flex-grow"
