@@ -1,0 +1,15 @@
+{
+  "name": "xicoexpress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:web-app": "pnpm install --filter ./xe-web-app... && pnpm --filter ./xe-web-app... build"
+  },
+  "keywords": [],
+  "author": "EI Akoji",
+  "license": "ISC",
+  "dependencies": {
+    "next": "15.3.2"
+  }
+}
