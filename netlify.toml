@@ -1,7 +1,7 @@
 [build]
 base = "xe-web-app"
 command = "pnpm install && pnpm build"
-# Do NOT set a publish directory; the Next.js plugin handles output
+functions = ""
 
 [[plugins]]
 package = "@netlify/plugin-nextjs"
