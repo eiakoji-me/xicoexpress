@@ -3,11 +3,11 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 
-interface Props {
+export default async function ArticleDetailPage({
+  params,
+}: {
   params: { id: string };
-}
-
-export default function ArticleDetailPage({ params }: Props) {
+}) {
   const article = articles.find((a) => a.id === params.id);
   if (!article) return notFound();
 
