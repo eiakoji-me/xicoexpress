@@ -27,6 +27,8 @@ export const footerLinks: FooterSection[] = [
     links: [
       { label: "Quiénes somos", href: "/nosotros" },
       { label: "Novedades", href: "/novedades" },
+      { label: "Bolsa de trabajo", href: "/trabajo" },
+      { label: "Preguntas Frecuentes", href: "/preguntas-frecuentes" },
       { label: "Contáctanos", href: "/contactanos" },
     ],
   },
@@ -43,8 +45,8 @@ export const footerLinks: FooterSection[] = [
   {
     title: "Enlaces",
     links: [
-      { label: "Bolsa de trabajo", href: "/trabajo" },
-      { label: "Preguntas Frecuentes", href: "/faq" },
+      { label: "Ofertas y Promociones", href: "/promociones" },
+      { label: "Herramientas", href: "/herramientas" },
       { label: "Política de Privacidad", href: "/politicas/privacidad" },
       {
         label: "Términos y Condiciones",

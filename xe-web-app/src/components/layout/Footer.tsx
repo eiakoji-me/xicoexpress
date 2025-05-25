@@ -51,7 +51,7 @@ const Footer = () => {
 
         {/* Newsletter + Social Icons */}
         <div>
-          <h4 className="text-base font-semibold mb-2">Newsletter</h4>
+            <h4 className="text-base font-semibold mb-2">Boletín</h4>
           <form className="flex flex-col gap-2">
             <input
               type="email"
