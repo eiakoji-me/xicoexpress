@@ -15,7 +15,7 @@
   # publish = "xe-web-app/.next"
 
   # Default build command.
-  command = "next build"
+  # command = "build:web-app"
 
 [[plugins]]
   # Installs the Lighthouse Build Plugin for all deploy contexts
