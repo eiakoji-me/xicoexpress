@@ -7205,7 +7205,7 @@ snapshots:
       '@strapi/design-system': 2.0.0-rc.23(@babel/runtime@7.27.1)(@codemirror/autocomplete@6.18.6)(@codemirror/language@6.11.0)(@codemirror/lint@6.8.5)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.2)(@codemirror/view@6.36.8)(@strapi/icons@2.0.0-rc.23(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.18(react-dom@18.3.1(react@18.3.1))(react@18.3.1)))(@types/react-dom@18.3.7(@types/react@18.3.22))(@types/react@18.3.22)(codemirror@5.65.19)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.18(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@strapi/icons': 2.0.0-rc.23(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.18(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@strapi/permissions': 5.13.1
-      '@strapi/types': 5.13.1(@types/node@20.17.50)(better-sqlite3@11.3.0)(typescript@5.4.4)
+      '@strapi/types': 5.13.1(@types/node@20.17.50)(better-sqlite3@11.3.0)(typescript@5.8.3)
       '@strapi/typescript-utils': 5.13.1
       '@strapi/utils': 5.13.1
       '@testing-library/dom': 10.1.0
@@ -7398,7 +7398,7 @@ snapshots:
       '@strapi/database': 5.13.1(@types/node@20.17.50)(better-sqlite3@11.3.0)
       '@strapi/design-system': 2.0.0-rc.23(@babel/runtime@7.27.1)(@codemirror/autocomplete@6.18.6)(@codemirror/language@6.11.0)(@codemirror/lint@6.8.5)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.2)(@codemirror/view@6.36.8)(@strapi/icons@2.0.0-rc.23(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.18(react-dom@18.3.1(react@18.3.1))(react@18.3.1)))(@types/react-dom@18.3.7(@types/react@18.3.22))(@types/react@18.3.22)(codemirror@5.65.19)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.18(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@strapi/icons': 2.0.0-rc.23(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.18(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
-      '@strapi/types': 5.13.1(@types/node@20.17.50)(better-sqlite3@11.3.0)(typescript@5.4.4)
+      '@strapi/types': 5.13.1(@types/node@20.17.50)(better-sqlite3@11.3.0)(typescript@5.8.3)
       '@strapi/utils': 5.13.1
       date-fns: 2.30.0
       date-fns-tz: 2.0.1(date-fns@2.30.0)
@@ -7486,7 +7486,7 @@ snapshots:
       '@strapi/generators': 5.13.1
       '@strapi/logger': 5.13.1
       '@strapi/permissions': 5.13.1
-      '@strapi/types': 5.13.1(@types/node@20.17.50)(better-sqlite3@11.3.0)(typescript@5.4.4)
+      '@strapi/types': 5.13.1(@types/node@20.17.50)(better-sqlite3@11.3.0)(typescript@5.8.3)
       '@strapi/typescript-utils': 5.13.1
       '@strapi/utils': 5.13.1
       bcryptjs: 2.4.3
@@ -7896,7 +7896,7 @@ snapshots:
       '@strapi/logger': 5.13.1
       '@strapi/permissions': 5.13.1
       '@strapi/review-workflows': 5.13.1(g2v5tpgbhn36jpezwpse4f72e4)
-      '@strapi/types': 5.13.1(@types/node@20.17.50)(better-sqlite3@11.3.0)(typescript@5.4.4)
+      '@strapi/types': 5.13.1(@types/node@20.17.50)(better-sqlite3@11.3.0)(typescript@5.8.3)
       '@strapi/typescript-utils': 5.13.1
       '@strapi/upload': 5.13.1(ckrgoypcwk7kucse4l4hhx4qd4)
       '@strapi/utils': 5.13.1
@@ -7998,34 +7998,6 @@ snapshots:
       - webpack-dev-server
       - webpack-plugin-serve
 
-  '@strapi/types@5.13.1(@types/node@20.17.50)(better-sqlite3@11.3.0)(typescript@5.4.4)':
-    dependencies:
-      '@casl/ability': 6.5.0
-      '@koa/cors': 5.0.0
-      '@koa/router': 12.0.2
-      '@strapi/database': 5.13.1(@types/node@20.17.50)(better-sqlite3@11.3.0)
-      '@strapi/logger': 5.13.1
-      '@strapi/permissions': 5.13.1
-      '@strapi/utils': 5.13.1
-      commander: 8.3.0
-      koa: 2.15.4
-      koa-body: 6.0.1
-      node-schedule: 2.1.1
-      typedoc: 0.25.10(typescript@5.4.4)
-      typedoc-github-wiki-theme: 1.1.0(typedoc-plugin-markdown@3.17.1(typedoc@0.25.10(typescript@5.4.4)))(typedoc@0.25.10(typescript@5.4.4))
-      typedoc-plugin-markdown: 3.17.1(typedoc@0.25.10(typescript@5.4.4))
-    transitivePeerDependencies:
-      - '@types/node'
-      - better-sqlite3
-      - mysql
-      - mysql2
-      - pg
-      - pg-native
-      - sqlite3
-      - supports-color
-      - tedious
-      - typescript
-
   '@strapi/types@5.13.1(@types/node@20.17.50)(better-sqlite3@11.3.0)(typescript@5.8.3)':
     dependencies:
       '@casl/ability': 6.5.0
@@ -8040,8 +8012,8 @@ snapshots:
       koa-body: 6.0.1
       node-schedule: 2.1.1
       typedoc: 0.25.10(typescript@5.8.3)
-      typedoc-github-wiki-theme: 1.1.0(typedoc-plugin-markdown@3.17.1(typedoc@0.25.10(typescript@5.8.3)))(typedoc@0.25.10(typescript@5.8.3))
-      typedoc-plugin-markdown: 3.17.1(typedoc@0.25.10(typescript@5.8.3))
+      typedoc-github-wiki-theme: 1.1.0(typedoc-plugin-markdown@3.17.1(typedoc@0.25.10(typescript@5.4.4)))(typedoc@0.25.10(typescript@5.4.4))
+      typedoc-plugin-markdown: 3.17.1(typedoc@0.25.10(typescript@5.4.4))
     transitivePeerDependencies:
       - '@types/node'
       - better-sqlite3
@@ -12350,31 +12322,13 @@ snapshots:
 
   typedoc-github-wiki-theme@1.1.0(typedoc-plugin-markdown@3.17.1(typedoc@0.25.10(typescript@5.4.4)))(typedoc@0.25.10(typescript@5.4.4)):
     dependencies:
-      typedoc: 0.25.10(typescript@5.4.4)
-      typedoc-plugin-markdown: 3.17.1(typedoc@0.25.10(typescript@5.4.4))
-
-  typedoc-github-wiki-theme@1.1.0(typedoc-plugin-markdown@3.17.1(typedoc@0.25.10(typescript@5.8.3)))(typedoc@0.25.10(typescript@5.8.3)):
-    dependencies:
       typedoc: 0.25.10(typescript@5.8.3)
-      typedoc-plugin-markdown: 3.17.1(typedoc@0.25.10(typescript@5.8.3))
+      typedoc-plugin-markdown: 3.17.1(typedoc@0.25.10(typescript@5.4.4))
 
   typedoc-plugin-markdown@3.17.1(typedoc@0.25.10(typescript@5.4.4)):
     dependencies:
       handlebars: 4.7.8
-      typedoc: 0.25.10(typescript@5.4.4)
-
-  typedoc-plugin-markdown@3.17.1(typedoc@0.25.10(typescript@5.8.3)):
-    dependencies:
-      handlebars: 4.7.8
       typedoc: 0.25.10(typescript@5.8.3)
-
-  typedoc@0.25.10(typescript@5.4.4):
-    dependencies:
-      lunr: 2.3.9
-      marked: 4.3.0
-      minimatch: 9.0.5
-      shiki: 0.14.7
-      typescript: 5.4.4
 
   typedoc@0.25.10(typescript@5.8.3):
     dependencies:
