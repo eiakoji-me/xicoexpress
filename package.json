@@ -9,7 +9,5 @@
   "keywords": [],
   "author": "EI Akoji",
   "license": "ISC",
-  "dependencies": {
-    "next": "15.3.2"
-  }
+  "dependencies": {}
 }
