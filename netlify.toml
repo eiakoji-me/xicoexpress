@@ -1,7 +1,9 @@
 [build]
 base = "xe-web-app"
 command = "pnpm install && pnpm build"
-functions = ""
+
+[functions]
+directory = ""
 
 [[plugins]]
 package = "@netlify/plugin-nextjs"
