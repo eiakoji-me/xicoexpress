@@ -1,5 +1,5 @@
 import React from "react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Headphones } from "lucide-react";
 
 const faqs = [
   {
@@ -20,9 +20,9 @@ const faqs = [
   {
     question: "¿Cómo puedo rastrear mi envío?",
     answer: (
-      <div>
+      <div className="space-y-2 text-gray-700">
         <p>Puedes rastrear tu envío fácilmente siguiendo estos pasos:</p>
-        <ol className="list-decimal list-inside mt-2 mx-5 space-y-1 text-gray-700">
+        <ol className="list-decimal list-inside ml-6 space-y-1">
           <li>
             Dirígete al menú principal y selecciona{" "}
             <strong>Herramientas &gt; Rastreo</strong>.
@@ -37,7 +37,7 @@ const faqs = [
             actualizado de tu paquete.
           </li>
         </ol>
-        <p className="mt-2">
+        <p>
           Si no estás seguro de qué paquetería se utilizó, contáctanos y con
           gusto te ayudamos a rastrear tu envío.
         </p>
@@ -58,25 +58,64 @@ const faqs = [
 
 const PreguntasFrecuentesPage = () => {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold mb-6 text-center">
-        Preguntas Frecuentes
-      </h1>
-      <div className="space-y-4">
-        {faqs.map((faq, idx) => (
-          <details
-            key={idx}
-            className="group border border-gray-200 rounded-md px-4 py-3 transition-all"
+    <>
+      {/* Hero Section */}
+      <section className="bg-yellow-400 text-black py-16 px-6 text-center">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          Preguntas Frecuentes
+        </h1>
+        <p className="text-lg max-w-2xl mx-auto">
+          Resolvemos las dudas más comunes sobre nuestros servicios, envíos,
+          devoluciones, almacenamiento y más.
+        </p>
+      </section>
+
+      {/* Main Content */}
+      <main>
+        {/* FAQ Section */}
+        <section className="max-w-4xl mx-auto px-4 sm:px-6 md:px-8 py-16">
+          <div className="space-y-4">
+            {faqs.map((faq, idx) => (
+              <details
+                key={idx}
+                className="group border border-gray-200 rounded-xl p-5 transition-all open:shadow-md open:border-yellow-400"
+              >
+                <summary className="flex justify-between items-center cursor-pointer text-lg font-semibold text-gray-800 group-open:text-yellow-600">
+                  {faq.question}
+                  <ChevronDown className="h-5 w-5 text-gray-500 transition-transform group-open:rotate-180" />
+                </summary>
+                <div className="mt-4 text-base leading-relaxed text-gray-700">
+                  {faq.answer}
+                </div>
+              </details>
+            ))}
+          </div>
+        </section>
+
+        {/* Divider */}
+        <hr className="border-t border-gray-200 mt-20" />
+
+        {/* CTA Section */}
+        <section className="bg-white py-16 px-6 text-center">
+          {/* Icon */}
+          <Headphones className="w-12 h-12 mx-auto mb-4 text-yellow-500" />
+
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            ¿Tienes más preguntas?
+          </h2>
+          <p className="mb-6 text-gray-700 max-w-2xl mx-auto">
+            Si aún tienes dudas sobre nuestros servicios, puedes hablar
+            directamente con un asesor que te guiará paso a paso.
+          </p>
+          <a
+            href="/contacto"
+            className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded transition-transform hover:scale-105 shadow-md"
           >
-            <summary className="flex justify-between items-center cursor-pointer font-medium text-lg text-gray-800 group-open:text-primary">
-              {faq.question}
-              <ChevronDown className="h-5 w-5 text-gray-500 group-open:rotate-180 transition-transform" />
-            </summary>
-            <p className="mt-2 text-gray-700">{faq.answer}</p>
-          </details>
-        ))}
-      </div>
-    </div>
+            Habla con un asesor
+          </a>
+        </section>
+      </main>
+    </>
   );
 };
 
