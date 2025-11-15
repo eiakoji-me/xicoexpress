@@ -9,7 +9,7 @@ export default async function ArticleDetailPage({
   params,
 }: {
   params: Params;
-}) {
+ }) {
   const { id } = await params;
   const article = articles.find((a) => a.id === id);
   if (!article) return notFound();

@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:web-app": "pnpm install --filter ./xe-web-app... && pnpm --filter ./xe-web-app... build"
+    "build:web-app": "pnpm install --filter ./xe-web-app... && pnpm --filter ./xe-web-app... build",
+    "dev:web-app": "pnpm --filter ./xe-web-app... dev",
+    "start:web-app": "pnpm --filter ./xe-web-app... start"
   },
   "keywords": [],
   "author": "EI Akoji",

@@ -10,67 +10,67 @@ This project follows a prioritized development plan aimed at releasing a feature
 
 ### ✅ Top Priority (In Progress)
 
-* **Data-Driven Content Setup**
+- **Data-Driven Content Setup**
 
-  * Set up `src/data/` for structured content management
-  * Define reusable files like `servicios.ts`, `faq.ts`, `iniciativas.ts`, and `site-config.ts`
-  * Create `types.ts` for strong typing
-  * Refactor all components/pages to use structured data files
+  - Set up `src/data/` for structured content management
+  - Define reusable files like `servicios.ts`, `faq.ts`, `iniciativas.ts`, and `site-config.ts`
+  - Create `types.ts` for strong typing
+  - Refactor all components/pages to use structured data files
 
 ---
 
 ### 🔜 High Priority (Next Phase)
 
-* **Netlify Forms Integration**
+- **Netlify Forms Integration**
 
-  * Support for `contacto`, `cotizador`, `bolsa de trabajo`
-  * Add honeypot fields for spam prevention
-  * Use Netlify notifications for submissions
+  - Support for `contacto`, `cotizador`, `bolsa de trabajo`
+  - Add honeypot fields for spam prevention
+  - Use Netlify notifications for submissions
 
-* **Admin Tool (Separate Project)**
+- **Admin Tool (Separate Project)**
 
-  * NestJS or similar lightweight backend
-  * Features: content config, quote logs, submission viewer
-  * Consider Netlify CMS or equivalent
+  - NestJS or similar lightweight backend
+  - Features: content config, quote logs, submission viewer
+  - Consider Netlify CMS or equivalent
 
 ---
 
 ### 🚰 Medium Priority (Post-MVP)
 
-* **PWA Support**
+- **PWA Support**
 
-  * Add `manifest.webmanifest`
-  * Register service worker (via `next-pwa`)
-  * Test “Add to Home Screen”
+  - Add `manifest.webmanifest`
+  - Register service worker (via `next-pwa`)
+  - Test “Add to Home Screen”
 
-* **SEO & Metadata**
+- **SEO & Metadata**
 
-  * Use `generateMetadata()` for dynamic metadata
-  * Add OpenGraph / Twitter tags
-  * Generate `sitemap.xml` and `robots.txt`
+  - Use `generateMetadata()` for dynamic metadata
+  - Add OpenGraph / Twitter tags
+  - Generate `sitemap.xml` and `robots.txt`
 
-* **Analytics**
+- **Analytics**
 
-  * Integrate Plausible or Vercel Analytics
-  * Add scripts and track key events like form submissions
+  - Integrate Plausible or Vercel Analytics
+  - Add scripts and track key events like form submissions
 
 ---
 
 ### 💡 Optional & Future Enhancements
 
-* **LatAm Expansion Routing**
+- **LatAm Expansion Routing**
 
-  * Setup for `/mx/`, `/pe/`, `/co/`, etc.
-  * Abstract content by country
+  - Setup for `/mx/`, `/pe/`, `/co/`, etc.
+  - Abstract content by country
 
-* **Advanced PWA / Offline**
+- **Advanced PWA / Offline**
 
-  * Add offline support only for future agent apps
+  - Add offline support only for future agent apps
 
-* **Headless CMS Integration**
+- **Headless CMS Integration**
 
-  * Replace static data with a CMS backend (e.g., Sanity or Netlify CMS)
-  * Plan API integration and content migration
+  - Replace static data with a CMS backend (e.g., Sanity or Netlify CMS)
+  - Plan API integration and content migration
 
 ---
 
@@ -115,14 +115,14 @@ src/
 
 ## 🌐 Deployment
 
-* Deploy via [Netlify](https://www.netlify.com/)
-* Static build supported
-* Use Netlify forms for submission handling
+- Deploy via [Netlify](https://www.netlify.com/)
+- Static build supported
+- Use Netlify forms for submission handling
 
 ---
 
 ## 📬 Contact
 
-For inquiries, issues, or suggestions, please reach out via the [contact page](https://yourdomain/contacto).
+For inquiries, issues, or suggestions, please reach out via the [contact page](https://yourdomain/contactanos).
 
 ---

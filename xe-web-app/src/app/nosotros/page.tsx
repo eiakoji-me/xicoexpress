@@ -187,7 +187,7 @@ export default function NosotrosPage() {
           personalizada.
         </p>
         <a
-          href="/contacto"
+          href="/contactanos"
           className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded transition-transform hover:scale-105 shadow-md"
         >
           Contáctanos
