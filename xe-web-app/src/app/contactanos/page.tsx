@@ -93,7 +93,7 @@ export default function ContactoPage() {
                   </a>
                   o
                   <a
-                    href="https://wa.me/527641028914"
+         href="https://wa.me/527641028914"           
                     className="text-yellow-500 underline mx-1"
                     target="_blank"
                     rel="noopener noreferrer"

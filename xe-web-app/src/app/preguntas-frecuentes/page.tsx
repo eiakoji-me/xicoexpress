@@ -108,8 +108,10 @@ const PreguntasFrecuentesPage = () => {
             directamente con un asesor que te guiará paso a paso.
           </p>
           <a
-            href="/contacto"
+            href="https://wa.me/527641028914"
             className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded transition-transform hover:scale-105 shadow-md"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Habla con un asesor
           </a>
