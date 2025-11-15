@@ -132,7 +132,7 @@ export default function ServiciosPage() {
           a tu medida.
         </p>
         <Link
-          href="/contacto?tipo=empresa"
+          href="/contactanos?tipo=empresa"
           className="inline-block bg-yellow-400 text-black font-medium py-2 px-6 rounded hover:bg-yellow-500 transition"
         >
           Contáctanos
