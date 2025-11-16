@@ -35,9 +35,9 @@ export const footerLinks: FooterSection[] = [
   {
     title: "Servicios",
     links: [
-      { label: "Envíos y Fletes exprés", href: "/servicios/envios" },
-      { label: "Compras y Devoluciones", href: "/servicios/compras" },
-      { label: "Servicios para Empresas", href: "/servicios/empresas" },
+      { label: "Envíos y Fletes exprés", href: "/servicios/envios-y-fletes" },
+      { label: "Compras y Devoluciones", href: "/servicios/compras-y-devoluciones" },
+      { label: "Servicios para Empresas", href: "/servicios#servicios-empresas" },
       { label: "Almacenaje y Empaque", href: "/servicios/almacenaje" },
       { label: "Servicios para Gobierno", href: "/servicios/gobierno" },
     ],
