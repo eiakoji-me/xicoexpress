@@ -48,7 +48,7 @@ export default function ServiciosPage() {
             icon={<Truck className="w-8 h-8 text-yellow-400" />}
             title="Envíos y Fletes"
             summary="Cobertura nacional e internacional con opciones exprés, recolección local y etiquetas prepagadas."
-            link="/servicios/envios"
+            link="/servicios/envios-y-fletes"
           />
           <CategoryCard
             icon={<Package className="w-8 h-8 text-yellow-400" />}
@@ -60,13 +60,13 @@ export default function ServiciosPage() {
             icon={<ShoppingBag className="w-8 h-8 text-yellow-400" />}
             title="Compras y Devoluciones"
             summary="Adquiere productos con nosotros y gestiona devoluciones desde plataformas como Shein o Amazon."
-            link="/servicios/compras"
+            link="/servicios/compras-y-devoluciones"
           />
         </div>
       </section>
 
       {/* Servicios Empresariales */}
-      <section className="bg-gray-50 py-16 px-6 mx-auto">
+      <section id="servicios-empresas" className="bg-gray-50 py-16 px-6 mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-semibold mb-4">
             Soluciones para Empresas y Organizaciones
@@ -86,7 +86,7 @@ export default function ServiciosPage() {
               "Distribución territorial de documentación",
               "Apoyo logístico en campañas",
             ]}
-            link="/servicios/empresas/gobierno"
+            link="/servicios/gobierno"
           />
           <IndustryCard
             icon={<Package className="w-8 h-8 text-yellow-400" />}
