@@ -57,7 +57,7 @@ const Hero = () => {
       <h1 className="sr-only">
         XicoExpress: envíos a todo México, compras en Mercado Libre y fletes
       </h1>
-      <div ref={sliderRef} className="keen-slider max-w-[1600px] mx-auto">
+      <div ref={sliderRef} className="keen-slider max-w-[1920px] mx-auto">
         {slides.map((slide, index) => (
           <div key={slide.image} className="keen-slider__slide">
             <Link
@@ -70,7 +70,7 @@ const Hero = () => {
                 fill
                 priority={index === 0}
                 className="object-contain"
-                sizes="(max-width: 1600px) 100vw, 1600px"
+                sizes="(max-width: 1920px) 100vw, 1920px"
               />
             </Link>
           </div>
