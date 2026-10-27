@@ -4,24 +4,25 @@ import React, { useRef, useEffect } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
+// Banner artwork already contains its headline, copy and call to action,
+// so the alt text carries that content for screen readers.
 const slides = [
   {
-    title: "Agilidad y confianza en cada envío.",
-    description:
-      "XicoExpress te conecta con tus paquetes a USA de forma rápida y segura.",
-    image: "/images/van-placeholder.png",
+    image: "/images/banner-envios-mexico.jpg",
+    alt: "Envía a todo México desde $185 pesos. Cotiza tu envío. Cobertura nacional, seguimiento en tiempo real y empaque seguro.",
+    href: "/herramientas",
   },
   {
-    title: "Tu compra en USA, directo a tu puerta.",
-    description: "Almacenamos y reenviamos tus paquetes sin complicaciones.",
-    image: "/images/van-placeholder.png",
+    image: "/images/banner-mercado-libre.jpg",
+    alt: "¿Compras en Mercado Libre? ¡Recíbelo en XicoExpress! Compra en línea y recibe tus paquetes con nosotros, fácil, seguro y cerca de ti. Conoce más.",
+    href: "/servicios/compras-y-devoluciones",
   },
   {
-    title: "Servicio de recolección local",
-    description: "Recibimos tus devoluciones de Shein, Temu y más.",
-    image: "/images/van-placeholder.png",
+    image: "/images/banner-fletes.jpg",
+    alt: "¿No cabe en una caja? Nosotros lo llevamos. Fletes locales y foráneos: paquetes voluminosos, recolección a domicilio y servicio local y foráneo.",
+    href: "/servicios/envios-y-fletes",
   },
 ];
 
@@ -52,36 +53,26 @@ const Hero = () => {
   }, [slider]);
 
   return (
-    <section className="bg-background py-10">
-      <div ref={sliderRef} className="keen-slider">
+    <section className="bg-background">
+      <h1 className="sr-only">
+        XicoExpress: envíos a todo México, compras en Mercado Libre y fletes
+      </h1>
+      <div ref={sliderRef} className="keen-slider max-w-[1920px] mx-auto">
         {slides.map((slide, index) => (
-          <div key={index} className="keen-slider__slide">
-            <div className="max-w-5xl mx-auto px-4 flex flex-col-reverse md:flex-row items-center justify-between gap-4 md:gap-8">
-              {/* Text Column */}
-              <div className="md:w-[45%] text-center md:text-left">
-                <h1 className="text-4xl font-bold text-foreground mb-4">
-                  {slide.title}
-                </h1>
-                <p className="text-base md:text-lg text-muted-foreground mb-6">
-                  {slide.description}
-                </p>
-                <Button className="bg-primary text-primary-foreground hover:bg-accent transition-transform hover:scale-105 shadow-md">
-                  Conocer más
-                </Button>
-              </div>
-
-              {/* Image Column */}
-              <div className="md:w-[45%] relative w-full h-[300px] sm:h-[400px] md:h-[500px]">
-                <Image
-                  src={slide.image}
-                  alt={slide.title}
-                  fill
-                  priority={index === 0}
-                  className="object-contain"
-                  sizes="(max-width: 768px) 100vw, 45vw"
-                />
-              </div>
-            </div>
+          <div key={slide.image} className="keen-slider__slide">
+            <Link
+              href={slide.href}
+              className="relative block w-full aspect-[1600/583]"
+            >
+              <Image
+                src={slide.image}
+                alt={slide.alt}
+                fill
+                priority={index === 0}
+                className="object-contain"
+                sizes="(max-width: 1920px) 100vw, 1920px"
+              />
+            </Link>
           </div>
         ))}
       </div>
